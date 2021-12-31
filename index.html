@@ -104,8 +104,8 @@
 		The final deliverable should correspond to a website acting as a collective memory of a specific administrative area. The target users are university students, who interact with the service,<br>
 		standing as both <i>short-term memory</i> (i.e., working memory) and <i>long-term memory</i>, specifically episodic. While the former function filters the future events by location, duration, target age, personal interests, event category (e.g., music, shows, festivals),<br>
 		and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures. <br><br></small>
-        </form>
-        <form action='#' method = 'post' id="form"></form>
+    </form>
+    <form action='#' method = 'post' id="form"></form>
             <b>DATA RESOURCES CATALOGUE:</b><br> 
             <ol>
                 <li>CRUSHSITE: <a href= https://www.crushsite.it/it>https://www.crushsite.it/it</a></li>
@@ -123,9 +123,9 @@
             <b>LINK TO DATASETS: <a href= https://github.com/LuciaHrovatin/KDI_project/tree/main/Formatted_Datasets>repo link</a> </b><br> 
             Data regarding events coming from crushsite, stayhappening, tripadvisor, dati trentino, meetup, mymovies and ESN have been saved in JSON format, and divided by E-type.
             Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.
-        </form>
-		<pre>
-			<code>
+    </form>
+	<pre>
+		<code>
 		{
 			"has_eventID": "",
 			"has_title": "",
@@ -158,38 +158,38 @@
 			"has_freeEntrance": , #bool
 		}
 						
-			</code>
-		</pre>
-        <form action='#' method = 'post' id="form">
-            <b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
-            <ol>
-                <li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
-                <li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
-                <li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
-            </ol>
-            LINK TO ETG: https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl 
-            The building process of the ER was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br>
+		</code>
+	</pre>
+    <form action='#' method = 'post' id="form">
+        <b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
+        <ol>
+            <li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
+            <li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
+            <li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
+        </ol>
+        LINK TO ETG: https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl 
+        The building process of the ER was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br>
             
         </form>
 
 		<ol>
-		<left><li> Common objects were mainly considered to be existence-independent as they are
+		<p><li> Common objects were mainly considered to be existence-independent as they are
 		uniquely identified by their attributes, and do not depend on other entity. Thanks to their
-		generic representation and vast usage, they could be used for a (future) broader DoI.</li>
+		generic representation and vast usage, they could be used for a (future) broader DoI.</li><br>
 		<li> Core objects represent purpose-specific entities, such as the event type, main actors (e.g.,
 		Student) or specific facilities. According to the intended output, core objects mirror the
 		infrastructure of the filtering system of the website. Specifically, these entities should direct
 		the initial query and skim all the events not matching preferences. For instance, if a specific
-		place is selected, the output will list only events taking place there.</li>
+		place is selected, the output will list only events taking place there.</li><br>
 		<li> Contextual objects were thought of being a further specification provided by the user to
 		obtain a narrower list of events matching all criteria. For instance, the user would use
 		location-specific keywords when searching for a specific set of events (e.g., Concerts in
-		Trento's Doss).</li>
+		Trento's Doss).</li><br>
 		<li>With concerns to actions, they mostly were intentionally not defined as entities. They have been integrated as either properties or bidirectional relationships between main
 		entities (i.e., superclasses). This choice is justified by focusing more on the event types and,
 		consequently, rejecting of a dense ER model. On the one hand, this leads to a model that
 		fully matches the project's purpose. On the other hand, it implies a more complex matching between the ER model and an already­existing Ontology. Functions, representing a
-		role or a static nature of an Etype, were mostly integrated as properties. However, in modeling certain events, this representation does not hold and the creation of sub­entities is preferred.</li>
+		role or a static nature of an Etype, were mostly integrated as properties. However, in modeling certain events, this representation does not hold and the creation of sub­entities is preferred.</li><br>
 		<br>
 		The designed Entit-Relationship (ER) model, shown below 1, exploits the Crow's foot notation
 		by displaying entities as boxes and relationships as lines between them [6]. The relationship's
@@ -205,22 +205,22 @@
 		categories) identified are the following:
 	
 		<li>Social Events: lead to a socialization process (i.e., people forming groups) and present
-		repeated actions, such as drinking or dancing. A prototypical example is a Happy Hour.</li>
-		<li>Education Events: (academic) prearranged meetings for consultation, exchange of information, or discussion. The audience might be not actively involved.</li>
+		repeated actions, such as drinking or dancing. A prototypical example is a Happy Hour.</li><br>
+		<li>Education Events: (academic) prearranged meetings for consultation, exchange of information, or discussion. The audience might be not actively involved.</li><br>
 		<li>Workshop: umbrella term for any laboratory event that actively involves the participants
-		and delivers a tangible result (i.e., product), or breaks new skills.</li>
+		and delivers a tangible result (i.e., product), or breaks new skills.</li><br>
 		<li>Cultural Events: knowing that cultural has a broad meaning, within this project, an event
 		is defined as cultural if it is designed for entertainment and enjoyment and is related to
 		some branch of art, culture, or local values (i.e., performing arts, musicals, photography,
 		and literature). The definition here adopted partially resembles the DutchCulture Database
-		structure as it is consistent with the project's purpose.</li>
+		structure as it is consistent with the project's purpose.</li><br>
 		<li>Tour: traveling means going from one place to another. Whereas the event's types above
 		may be represented as happening at a specific time and in a static space, a tour event
 		involves both a movement and some personal interests. For example, if a hiking tour is
 		considered, two decoupled levels can be identified. Firstly, the static one, meaning the
 		event description, follows the standard place-time definition. Then, the movement and its
 		volatility can be introduced. Thus, creating a specific entity in the ER model combines the
-		two levels and tries to solve a corner case.<li>
+		two levels and tries to solve a corner case.</li><br>
 		<li>Sports Events: organized occasions where a sports or exercise activity is performed at
 		a specific location in a temporal interval. Most sports events are also part of bigger meetings and competitions. They can be periodically organised, such as the Facoltiadi or a sports course (i.e., dance course). Depending on the disciplines, schedule, competitors,
 		and scope (e.g., tournaments, leagues, fundraising), the events may embed different descriptors. However, accordingly to the project's purpose only the general ones have been
@@ -229,36 +229,36 @@
 		While the Covid-19 pandemic did not particularly impact the events' categories, it constraints
 		and modifies the concept of location. Thus, three scenarios are possible:
 		<li>Offline events have a location traditionally defined as an identifiable point in the two (or
-		three) dimensional space </li>
+		three) dimensional space </li><br>
 		<li>Online events, meaning occasions happening only in a virtual environment hosted on video
-		communication services, such as Zoom and Google Meet.</li>
+		communication services, such as Zoom and Google Meet.</li><br>
 		<li>Blended or Hybrid events offer an offline or online attendance depending on the participant's
-		needs and possibilities.</li> 
+		needs and possibilities.</li><br> 
 		</ol><br>
 		CreativeWork gathers all human artifacts produced during an activity or employed in an event. The properties for each sub-class have been extracted by benchmarking other services, for example:
-		<li>Track follows the audio features returned by the SpotifyAPI.</li>
+		<li>Track follows the audio features returned by the SpotifyAPI.</li><br>
 		<li>Recipe is mainly modeled on Giallo Zafferano, a well known Italian food website and magazine that greatly satisfies user's needs but does not offer tabular data. Further attributes
 		were extracted from the RecipeDB food database, which encapsulates the information
 		about recipes, ingredients and nutrition profiles interlinked with flavor profiles and health
-		associations. <li>
+		associations. </li><br>
 		<li>Map should comply with some standards and minimum requirements depending on the type
 		of product, as the Copernicus program states. In this framework, the maps are defined as
-		a geographical depiction of the territory and routing instrument. <li>
+		a geographical depiction of the territory and routing instrument. </li><br>
 		
 
-		<li>Image entity preserves the standard characteristics of a (digital) picture but also mimics Pinterest's functionality via (optional) tags, allowing an easy retrieval.</li> <br>
+		<li>Image entity preserves the standard characteristics of a (digital) picture but also mimics Pinterest's functionality via (optional) tags, allowing an easy retrieval.</li><br> <br>
 		Some further specifications are needed: 
-		<ol><li>PerformingGroup is an umbrella term for describing single artists, groups, bands, or orchestras but also theater or artistic groups. </li>
+		<ol><li>PerformingGroup is an umbrella term for describing single artists, groups, bands, or orchestras but also theater or artistic groups. </li><br>
 		<li>Secondly, the Team sub-entity is based on the tabularstructure of TheSportsDB by leaving out the attributes referring to streaming data (e.g., live scores).
-		</li>
-		<li>To satisfy the necessity of a memory, the ER model integrates an Archive entity too, aiming at keeping track of events' past history.</li>
+		</li><br>
+		<li>To satisfy the necessity of a memory, the ER model integrates an Archive entity too, aiming at keeping track of events' past history.</li><br>
 		<li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses
-			on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li>
-		</ol></left>
+			on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li><br>
+		</ol><p>
         
 
 		<b>PLEASE NOTICE THAT DUE TO TIMING, SOME FURTHER CHANGES WERE APPLIED ON THE ER, HENCE, THIS IS THE REFERENCE ONE: </b></small>
-        <img src="photo_2021-12-03_18-18-40" alt="ER Model" >
+        <img src="photo_2021-12-03_18-18-40" style="width: 300px; height: 150px"  alt="ER Model" >
 
 		
 	
