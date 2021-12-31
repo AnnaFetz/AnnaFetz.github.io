@@ -117,7 +117,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 <li> To satisfy the necessity of a memory, the ER model integrates an Archive entity too, aiming at keeping track of events' past history.</li><br>
 <li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li><br>
 
-Please notice that due to timing some further changes were applied. Reference ER can be found in the official course repo.
+Please notice that due to timing some further changes were applied. Reference ER can be found in the official course repo.<br>
 
 ### ETG description
 
@@ -143,8 +143,7 @@ Please notice that due to timing some further changes were applied. Reference ER
 <li> FINAL KG : https://github.com/AnnaFetz/KDI_Events_in_Trentino/tree/main/Datasets/Data%20Integration </li>
 
 
-<b>NOTE:</b> please note that the final KG is split between Entities RDF Files, due to some last-minute changes. 
-<br>
+<b>NOTE:</b> please note that the final KG is split between Entities RDF Files, due to some last-minute changes. <br>
 
 ### Support or Contact
 Please send an email to [Anna Fetz](annamaria.fetz@studenti.unitn.it) or to [Lucia Hrovatin](lucia.hrovatin@studenti.unitn.it) and we’ll try to help you.
