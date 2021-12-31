@@ -141,9 +141,10 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 <li> PerformingGroup is an umbrella term for describing single artists, groups, bands, or orchestras but also theater or artistic groups.</li> <br>
 <li> Team sub-entity is based on the tabularstructure of TheSportsDB by leaving out the attributes referring to streaming data (e.g., live scores).</li><br>
 <li> To satisfy the necessity of a memory, the ER model integrates an Archive entity too, aiming at keeping track of events' past history.</li><br>
-<li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. <li><br>
+<li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li><br>
 
-For more details, please notice that due to timing some further changes were applied, and the reference one is the following: [reference ER](https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/ER.jpg).<br>
+For more details, please notice that due to timing some further changes were applied, and the reference one is the following: [reference ER](https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/ER.jpg).
+<br>
 
 ### ETG description
 
