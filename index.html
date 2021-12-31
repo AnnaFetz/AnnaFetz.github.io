@@ -177,6 +177,7 @@
             </code>
         <pre>
 		<ol>
+        <p>EG DESCRIPTION:</p>
 		<p><li> Common objects were mainly considered to be existence-independent as they are
 		uniquely identified by their attributes, and do not depend on other entity. Thanks to their
 		generic representation and vast usage, they could be used for a (future) broader DoI.</li><br>
@@ -263,6 +264,75 @@
 
 		<b>PLEASE NOTICE THAT DUE TO TIMING, SOME FURTHER CHANGES WERE APPLIED ON THE ER, HENCE, THIS IS THE REFERENCE ONE: </b></small>
         <a href="https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/photo_2021-12-03_18-18-40.jpg"> FINAL ER </a>
+        <br>
+        <p>ETG DESCRIPTION:</p>
+        <ol>
+            <li><b>Event:</b> The CQs requiring to navigate back in time through an event's collective memory (i.e.,
+                Archive) and those demanding the distance to a certain venue were not satisfied by the
+                previous version of the ER model. While the latter has been solved via a boolean Data
+                property distance that filters the events based on a ray of 2km from a specific venue, the
+                former issue induced more structural changes. Hence the adjustments focused on the
+                consistency of information and the storage costs of sub events belonging to a super event,
+                such as a Festival or a Fair. To simplify the model, the Object property superEvent has
+                been introduced, allowing a one to one relationship with the main Event and guaranteeing a single storage in Archive. Moreover, to follow the trail of a collective memory, and
+                to ease future project's expansions, the Object property post was introduced, linking to
+                CreativeWork, and modeling the act of posting pictures and reviews.
+                Within this framework, also the Object property EventType and the relative sub categories
+                have undergone several modifications. Ideally, the ER event classification model should
+                have been mirrored by the final ETG, as it perfectly satisfied the granularity required by the
+                CQs. However, due to the fact that the majority of our reference files required pondered
+                parsing, and several Event's leaf nodes contained boolean properties, a less detailed but
+                more performing option has been preferred. Thus, the ETG reflects the final ER model,
+                that merges the contextual and core event-related Etypes and keeps the six main subcategories of Event. Hence, the Event child SocialEvent displays all the Data properties
+                contained in DanceEvent (e.g., happyHour) and in FolkEvent.
+                Lastly, instead of keeping one Entity per event mode (namely, offline, online, and blended),
+                a new attribute eventMode was introduced. The values allowed should identify (as string)
+                the three event statuses: online, offline, hybrid. This simplification skims some relationships
+                between event and location, and retains the most relevant information.</li>
+            <li><b>Duration: </b>The Object property duration, contained in Event, was also subject to changes. Thus, the
+                 concept of Duration has been simplified and reduced to the Data Properties start and
+                  end, which define the Event's range of action in time.</li> 
+            <li><b>Schedule:</b> Due to the overlapping of Schedule with Event, it has been replaced by two Data properties:
+            recurrency and schedule, respectively defined as boolean datatype and string. The latter
+            should specify the pace of the Event, guaranteeing both an appropriate output for CQs
+            requiring weekly or yearly scheduled events, and for those having an irregular pace.</li>
+            <li>><b>Facility: </b>A trade off was faced: on the one hand, facilities could be categorized in sub classes, such
+            as FoodEstablishment or Accommodation, keeping a high level of detail. On the other hand,
+            this structure was not feasible due to the time required in data preparation and management. Therefore, all boolean Data properties of the sub­classes have been merged within
+            facilityType property. Additionally, considering the CQs' requirement of listing specific
+            food (e.g., typicalFood) or activity (e.g., hiking), the contextual attributes have been kept
+            in separate Data properties. Hence, Facility presents properties such as cuisine and
+            hiking. This latter example also solved the issue regarding the erasure of Landscape, that
+            was requiring a granularity out of project's scope.</li>
+            <li><b>Ranking: </b>In Ranking, the isDistant property was discarded in light of what discussed for Event
+            and data availability. Thus, instead of keeping both dichotomies distance ranking and
+            enjoyment ranking, only the latter has been kept. Moreover, the ER model was lacking
+            the connection between the concept of ranking and the criterion followed, namely the reviews. To fill this gap, the Object property review was introduced in Ranking and linked to
+            Review, a contextual and independent entity.</li>
+            
+            <li><b>Archive: </b>Due to the concept of collective memory pursued by the Purpose, some changes were
+            applied on the Etype Archive as it was missing some information. Thus, the hyperlinks
+            created by hashtags, the importDate and the visualReferences were added as Data properties.</li>
+            <li><b>CreativeWork: </b> The changes regarding Review addressed a further issue: several children of CreativeWork
+            were sharing properties and the available data would not have reached such granularity. Thus, all the common properties of CreativeWork's children have been collapsed
+            and the children (i.e., Image, Show, Recipe, Track and Map) discarded. The super entity
+            CreativeWork is therefore defined as a ”manifestation of creative effort including fine artwork (sculpture, paintings, drawing, sketching, performance art), dance, writing (literature)
+            film-making, and composition".</li>
+            <li><b>Note: </b>Further entities, such as SeatReservation, Transport and PostalAddress have been
+            deleted as such granularity was not expected. Moreover, the information required by
+            some CQs has been either collapsed in the super­entities (e.g., PostalAddress moved
+            in Location), or added as data properties (i.e., trasportationMode) or integrated within
+            already existing properties, like additionalInformation or description.
+            When selecting the appropriate concepts to reshape the ER model, some general purpose ontologies such as schema.org and DBPedia have been exploited, along with Wordnet
+            database. Moreover, the concepts related to the spatial information have been treated according to OpenStreetMap's ontologies OSMonto and LikedGeoData. A last open issue regards
+            the definition of architectural barriers, which depends on the country and its relative legislation.
+            Having as spatial coverage the area of Trento and Rovereto, the project reports the guidelines
+            proposed by the cooperative HandiCREA in the mobile application TrentinoAccessibile.</li>
+
+        </ol>
+
+        LINK TO FINAL <a href="https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Teleologies/Formal%20Modeling/ETG.owl">ETG</a> and FINAL <a href="https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Datasets/Data%20Integration/EG_RDF.zip">KG</a>
+        NOTE: please note that the final KG is split between Entities RDF Files, due to some last-minute changes. 
 
 		
 	
