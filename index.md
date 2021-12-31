@@ -138,7 +138,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 - A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. 
 
   
-For more details, please notice that due to timing some further changes were applied, and the reference one is the following: [reference ER]().
+For more details, please notice that due to timing some further changes were applied, and the reference one is the following: [reference ER]().<br>
 
 ### ETG description
 
@@ -198,17 +198,15 @@ For more details, please notice that due to timing some further changes were app
             some CQs has been either collapsed in the super-entities (e.g., PostalAddress moved
             in Location), or added as data properties (i.e., trasportationMode) or integrated within
             already existing properties, like additionalInformation or description.
-            When selecting the appropriate concepts to reshape the ER model, some general purpose ontologies such as schema.org and DBPedia have been exploited, along with Wordnet database. Moreover, the concepts related to the spatial information have been treated according to OpenStreetMap's ontologies OSMonto and LikedGeoData. A last open issue regards the definition of architectural barriers, which depends on the country and its relative legislation.
-            Having as spatial coverage the area of Trento and Rovereto, the project reports the guidelines
-            proposed by the cooperative HandiCREA in the mobile application TrentinoAccessibile. 
+            When selecting the appropriate concepts to reshape the ER model, some general purpose ontologies such as schema.org and DBPedia have been exploited, along with Wordnet database. Moreover, the concepts related to the spatial information have been treated according to OpenStreetMap's ontologies OSMonto and LikedGeoData. A last open issue regards the definition of architectural barriers, which depends on the country and its relative legislation. Having as spatial coverage the area of Trento and Rovereto, the project reports the guidelines proposed by the cooperative HandiCREA in the mobile application TrentinoAccessibile. 
   
 
 ### Final Links 
   
-[FINAL ETG](https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Teleologies/Formal%20Modeling/ETG.owl) and [FINAL KG](https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Datasets/Data%20Integration/EG_RDF.zip)
+[FINAL ETG](https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Teleologies/Formal%20Modeling/ETG.owl) and [FINAL KG](https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Datasets/Data%20Integration/EG_RDF.zip)<br>
 
  <b>NOTE:</b> please note that the final KG is split between Entities RDF Files, due to some last-minute changes. 
-
+<br>
 
 ### Support or Contact
 Please send an email to [Anna Fetz](annamaria.fetz@studenti.unitn.it) or to [Lucia Hrovatin](lucia.hrovatin@studenti.unitn.it) and we’ll try to help you.
