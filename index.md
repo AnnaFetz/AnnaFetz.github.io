@@ -70,10 +70,10 @@ Data regarding events coming from crushsite, stayhappening, tripadvisor, dati tr
 
 ```
 
-## ER description
+### ER description
 
-The building process of the ER was intended to resemble a real query on the final service. Thus, below an explanation of the intended hierarchy.
-<p><li> Common objects were mainly considered to be existence-independent as they are
+<p>The building process of the ER was intended to resemble a real query on the final service. Thus, below an explanation of the intended hierarchy.
+<li> Common objects were mainly considered to be existence-independent as they are
 		uniquely identified by their attributes, and do not depend on other entity. Thanks to their
 		generic representation and vast usage, they could be used for a (future) broader DoI.</li><br>
 		<li> Core objects represent purpose-specific entities, such as the event type, main actors (e.g.,
@@ -144,11 +144,11 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 Please notice that due to timing some further changes were applied.
 Reference ER is the following: <br>
 ![ER](https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/ER.jpg)
-<br>
+<br></p>
 
 ## ETG description
 
-<li><b>Event:</b> The CQs requiring to navigate back in time through an event's collective memory (i.e., Archive) and those demanding the distance to a certain venue were not satisfied by the previous version of the ER model. While the latter has been solved via a boolean Data property distance that filters the events based on a ray of 2km from a specific venue, the former issue induced more structural changes. Hence the adjustments focused on the consistency of information and the storage costs of sub events belonging to a super event,  such as a Festival or a Fair. To simplify the model, the Object property superEvent has been introduced, allowing a one to one relationship with the main Event and guaranteeing a single storage in Archive. Moreover, to follow the trail of a collective memory, and to ease future project's expansions, the Object property post was introduced, linking to CreativeWork, and modeling the act of posting pictures and reviews. Within this framework, also the Object property EventType and the relative sub categories have undergone several modifications. Ideally, the ER event classification model should have been mirrored by the final ETG, as it perfectly satisfied the granularity required by the CQs. However, due to the fact that the majority of our reference files required pondered parsing, and several Event's leaf nodes contained boolean properties, a less detailed but more performing option has been preferred. Thus, the ETG reflects the final ER model, that merges the contextual and core event-related Etypes and keeps the six main subcategories of Event. Hence, the Event child SocialEvent displays all the Data properties contained in DanceEvent (e.g., happyHour) and in FolkEvent. Lastly, instead of keeping one Entity per event mode (namely, offline, online, and blended),
+<p><li><b>Event:</b> The CQs requiring to navigate back in time through an event's collective memory (i.e., Archive) and those demanding the distance to a certain venue were not satisfied by the previous version of the ER model. While the latter has been solved via a boolean Data property distance that filters the events based on a ray of 2km from a specific venue, the former issue induced more structural changes. Hence the adjustments focused on the consistency of information and the storage costs of sub events belonging to a super event,  such as a Festival or a Fair. To simplify the model, the Object property superEvent has been introduced, allowing a one to one relationship with the main Event and guaranteeing a single storage in Archive. Moreover, to follow the trail of a collective memory, and to ease future project's expansions, the Object property post was introduced, linking to CreativeWork, and modeling the act of posting pictures and reviews. Within this framework, also the Object property EventType and the relative sub categories have undergone several modifications. Ideally, the ER event classification model should have been mirrored by the final ETG, as it perfectly satisfied the granularity required by the CQs. However, due to the fact that the majority of our reference files required pondered parsing, and several Event's leaf nodes contained boolean properties, a less detailed but more performing option has been preferred. Thus, the ETG reflects the final ER model, that merges the contextual and core event-related Etypes and keeps the six main subcategories of Event. Hence, the Event child SocialEvent displays all the Data properties contained in DanceEvent (e.g., happyHour) and in FolkEvent. Lastly, instead of keeping one Entity per event mode (namely, offline, online, and blended),
                 a new attribute eventMode was introduced. The values allowed should identify (as string)
                 the three event statuses: online, offline, hybrid. This simplification skims some relationships
                 between event and location, and retains the most relevant information.</li>
@@ -189,7 +189,7 @@ Reference ER is the following: <br>
             some CQs has been either collapsed in the super-entities (e.g., PostalAddress moved
             in Location), or added as data properties (i.e., trasportationMode) or integrated within
             already existing properties, like additionalInformation or description.
-            When selecting the appropriate concepts to reshape the ER model, some general purpose ontologies such as schema.org and DBPedia have been exploited, along with Wordnet database. Moreover, the concepts related to the spatial information have been treated according to OpenStreetMap's ontologies OSMonto and LikedGeoData. A last open issue regards the definition of architectural barriers, which depends on the country and its relative legislation. Having as spatial coverage the area of Trento and Rovereto, the project reports the guidelines proposed by the cooperative HandiCREA in the mobile application TrentinoAccessibile. <br>
+            When selecting the appropriate concepts to reshape the ER model, some general purpose ontologies such as schema.org and DBPedia have been exploited, along with Wordnet database. Moreover, the concepts related to the spatial information have been treated according to OpenStreetMap's ontologies OSMonto and LikedGeoData. A last open issue regards the definition of architectural barriers, which depends on the country and its relative legislation. Having as spatial coverage the area of Trento and Rovereto, the project reports the guidelines proposed by the cooperative HandiCREA in the mobile application TrentinoAccessibile. <br></p>
   
 
 ## Final Links 
