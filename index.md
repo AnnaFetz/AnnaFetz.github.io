@@ -1,7 +1,7 @@
 ## Official Events in Trentino KDI Project's Website
 ### Academic year 2021/2022, MSc Data Science, University of Trento
 
-Link to [Official course repo](https://github.com/AnnaFetz/KDI_TRENTINO)<br>
+Link to [Official course repo](https://github.com/AnnaFetz/KDI_Events_in_Trentino)<br>
 Link to [Project personal repo](https://github.com/LuciaHrovatin/KDI_project/tree/main)
 
 
