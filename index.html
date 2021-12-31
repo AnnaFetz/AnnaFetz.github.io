@@ -28,6 +28,11 @@
 			padding: 30px 20px;
 			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.763);
 		}
+        table, th, td {
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+         }
 
 		/* Styling form-control Class */
 		.form-control {
@@ -106,7 +111,7 @@
 		and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures. <br><br></small>
     </form>
     <form action='#' method = 'post' id="form"></form>
-        <b>DATA RESOURCES CATALOGUE:</b><br> 
+    <td><b>DATA RESOURCES CATALOGUE:</b><br> 
         <ol>
             <li>CRUSHSITE: <a href= https://www.crushsite.it/it>https://www.crushsite.it/it</a></li>
             <li>STAYHAPPENING: <a href= https://stayhappening.com> https://stayhappening.com/</a></li>
@@ -121,7 +126,15 @@
         </ol>
         <b>LINK TO DATASETS: <a href= https://github.com/LuciaHrovatin/KDI_project/tree/main/Formatted_Datasets>repo link</a> </b><br> 
         Data regarding events coming from crushsite, stayhappening, tripadvisor, dati trentino, meetup, mymovies and ESN have been saved in JSON format, and divided by E-type.
-        Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.
+        Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.</td>
+        <td><b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
+        <ol>
+            <li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
+            <li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
+            <li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
+        </ol>
+        LINK TO ETG: <a href="https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl">ETG</a>
+        The building process of the ER was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br></td>
         </form>
 	<pre>
 		<code>
@@ -159,19 +172,8 @@
 						
 		</code>
 	</pre>
-    <form action='#' method = 'post' id="form">
-        <b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
-        <ol>
-            <li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
-            <li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
-            <li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
-        </ol>
-        LINK TO ETG: <a href="https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl">ETG</a>
-        The building process of the ER was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br>
-            
-        </form>
 
-		<ol>
+	<ol>
 		<p><li> Common objects were mainly considered to be existence-independent as they are
 		uniquely identified by their attributes, and do not depend on other entity. Thanks to their
 		generic representation and vast usage, they could be used for a (future) broader DoI.</li><br>
