@@ -142,7 +142,8 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 <li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li><br>
 
 Please notice that due to timing some further changes were applied.
-Reference ER is the following: [reference ER](https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/ER.jpg).
+Reference ER is the following: <br>
+![ER](https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/ER.jpg)
 <br>
 
 ## ETG description
@@ -193,7 +194,9 @@ Reference ER is the following: [reference ER](https://github.com/AnnaFetz/AnnaFe
 
 ## Final Links 
 <br>
-[FINAL ETG](https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Teleologies/Formal%20Modeling/ETG.owl) and [FINAL KG](https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Datasets/Data%20Integration/EG_RDF.zip)<br>
+<li> FINAL ETG : https://github.com/AnnaFetz/KDI_Events_in_Trentino/tree/main/Teleologies/Formal%20Modeling </li>
+<li> FINAL KG : https://github.com/AnnaFetz/KDI_Events_in_Trentino/tree/main/Datasets/Data%20Integration </li>
+<br>
 
  <b>NOTE:</b> please note that the final KG is split between Entities RDF Files, due to some last-minute changes. 
 <br>
