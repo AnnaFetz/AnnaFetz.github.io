@@ -138,7 +138,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 - A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. 
 
   
-For more details, please notice that due to timing some further changes were applied, and the reference one is the following: [reference ER]().<br>
+For more details, please notice that due to timing some further changes were applied, and the reference one is the following: [reference ER](https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/ER.jpg).<br>
 
 ### ETG description
 
