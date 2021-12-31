@@ -127,7 +127,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 		communication services, such as Zoom and Google Meet; </li><br>
 	<li> Blended or Hybrid events offer an offline or online attendance depending on the participant's
 		needs and possibilities. </li>
-<ol>
+</ol>
 <br> 
 <li> CreativeWork gathers all human artifacts produced during an activity or employed in an event. The properties for each sub-class have been extracted by benchmarking other services, for example:
 	<ol>
