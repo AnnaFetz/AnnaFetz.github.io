@@ -103,27 +103,27 @@
 		Temporally, the project targets 2019-2022 timespan, which aims at detecting and modeling the changes occurred due to the Covid-19 pandemic in event organization and participation.<br>
 		The final deliverable should correspond to a website acting as a collective memory of a specific administrative area. The target users are university students, who interact with the service,<br>
 		standing as both <i>short-term memory</i> (i.e., working memory) and <i>long-term memory</i>, specifically episodic. While the former function filters the future events by location, duration, target age, personal interests, event category (e.g., music, shows, festivals),<br>
-		and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures. <br><br>
-		<b>DATA RESOURCES CATALOGUE:</b><br> 
+		and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures. <br><br></small>
+        </form>
+        <b>DATA RESOURCES CATALOGUE:</b><br> 
 		<ol>
-			<il>CRUSHSITE: https://www.crushsite.it/it/</il>
-			<il>STAYHAPPENING: https://stayhappening.com/ </il>
-			<il>EVENTBRITE: https://www.eventbrite.com/</il>
-			<il>TRIPADVISOR: https://www.tripadvisor.it/</il>
-			<il>ESN: https://esn.it/</il>
-			<il>UNIVERSITARIO: https://www.luniversitario.it/ </il>
-			<il>DATI TRENTINO: https://dati.trentino.it/</il>
-			<il>MEETUP: https://www.meetup.com/it-IT/</il>
-			<il>OPENSTREETMAP: https://www.openstreetmap.org/#map=9/46.0025/10.9414</il>
-			<il>MYMOVIES: https://www.mymovies.it/cinema/trento/versione-originale/</il>
+			<li>CRUSHSITE: <a href= https://www.crushsite.it/it>https://www.crushsite.it/it</a></li>
+			<li>STAYHAPPENING: <a href= https://stayhappening.com> https://stayhappening.com/</a></li>
+			<li>EVENTBRITE: <a href= https://www.eventbrite.com> https://www.eventbrite.com/</li></a>
+			<li>TRIPADVISOR: <a href=  https://www.tripadvisor.it> https://www.tripadvisor.it/</li></a>
+			<li>ESN: <a href=   https://esn.it> https://esn.it/</li></a>
+			<li>UNIVERSITARIO: <a href= https://www.luniversitario.it> https://www.luniversitario.it/ </li></a>
+			<li>DATI TRENTINO: <a href= https://dati.trentino.it> https://dati.trentino.it/</li></a>
+			<li>MEETUP: <a href= https://www.meetup.com/it-IT> https://www.meetup.com/it-IT/</li></a>
+			<li>OPENSTREETMAP: <a href= https://www.openstreetmap.org/#map=9/46.0025/10.9414> https://www.openstreetmap.org/#map=9/46.0025/10.9414</li></a>
+			<li>MYMOVIES: <a href= https://www.mymovies.it/cinema/trento/versione-originale> https://www.mymovies.it/cinema/trento/versione-originale/</li></a>
 
 		</ol>
-		<b>LINK TO DATASETS: https://github.com/LuciaHrovatin/KDI_project/tree/main/Formatted_Datasets </b><br> 
+		<b>LINK TO DATASETS: <a href= https://github.com/LuciaHrovatin/KDI_project/tree/main/Formatted_Datasets>repo link</a> </b><br> 
 		Data regarding events coming from crushsite, stayhappening, tripadvisor, dati trentino, meetup, mymovies and ESN have been saved in JSON format, and divided by E-type.
 		Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.
 		<pre>
 			<code>
-
 		{
 			"has_eventID": "",
 			"has_title": "",
@@ -160,32 +160,32 @@
 		</pre>
 		<b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
 		<ol>
-			<il>WORDNET:https://wordnet.princeton.edu/</il>
-			<il>SCHEMA: https://schema.org/ </il>
-			<il>DBPEDIA: https://www.dbpedia.org/</il>
+			<li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
+			<li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
+			<li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
 		</ol>
 		LINK TO ETG: https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl 
-		The building process of the Informal Modeling Sheet was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br>
+		The building process of the ER was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br>
 		<ol>
 
 		
-		<il> Common objects were mainly considered to be existence-independent as they are
+		<li> Common objects were mainly considered to be existence-independent as they are
 		uniquely identified by their attributes, and do not depend on other entity. Thanks to their
-		generic representation and vast usage, they could be used for a (future) broader DoI.</il>
-		<il> Core objects represent purpose-specific entities, such as the event type, main actors (e.g.,
+		generic representation and vast usage, they could be used for a (future) broader DoI.</li>
+		<li> Core objects represent purpose-specific entities, such as the event type, main actors (e.g.,
 		Student) or specific facilities. According to the intended output, core objects mirror the
 		infrastructure of the filtering system of the website. Specifically, these entities should direct
 		the initial query and skim all the events not matching preferences. For instance, if a specific
-		place is selected, the output will list only events taking place there.</il>
-		<il> Contextual objects were thought of being a further specification provided by the user to
+		place is selected, the output will list only events taking place there.</li>
+		<li> Contextual objects were thought of being a further specification provided by the user to
 		obtain a narrower list of events matching all criteria. For instance, the user would use
 		location-specific keywords when searching for a specific set of events (e.g., Concerts in
-		Trento's Doss).</il>
-		<il>With concerns to actions, they mostly were intentionally not defined as entities. They have been integrated as either properties or bidirectional relationships between main
+		Trento's Doss).</li>
+		<li>With concerns to actions, they mostly were intentionally not defined as entities. They have been integrated as either properties or bidirectional relationships between main
 		entities (i.e., superclasses). This choice is justified by focusing more on the event types and,
 		consequently, rejecting of a dense ER model. On the one hand, this leads to a model that
 		fully matches the project's purpose. On the other hand, it implies a more complex matching between the ER model and an already­existing Ontology. Functions, representing a
-		role or a static nature of an Etype, were mostly integrated as properties. However, in modeling certain events, this representation does not hold and the creation of sub­entities is preferred.</il>
+		role or a static nature of an Etype, were mostly integrated as properties. However, in modeling certain events, this representation does not hold and the creation of sub­entities is preferred.</li>
 		<br>
 		The designed Entit-Relationship (ER) model, shown below 1, exploits the Crow's foot notation
 		by displaying entities as boxes and relationships as lines between them [6]. The relationship's
@@ -244,20 +244,21 @@
 
 		<li>Image entity preserves the standard characteristics of a (digital) picture but also mimics Pinterest's functionality via (optional) tags, allowing an easy retrieval.</li> <br>
 		Some further specifications are needed: 
-		<ol><li>PerformingGroup is an umbrella term for describing single artists, groups, bands, or orchestras but also theater or artistic groups. </li>
-		<li>Secondly, the Team sub­entity is based on the tabularstructure of TheSportsDB by leaving out the attributes referring to streaming data (e.g., live scores).
+		<ol><li>PerformingGroup is an umbrella term for describing single artists, groups, bands, or orchestras but also theater or artistic groups. </li>
+		<li>Secondly, the Team sub-entity is based on the tabularstructure of TheSportsDB by leaving out the attributes referring to streaming data (e.g., live scores).
 		</li>
 		<li>To satisfy the necessity of a memory, the ER model integrates an Archive entity too, aiming at keeping track of events' past history.</li>
 		<li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses
 			on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li>
 		</ol>
+        
 
-
-		<b>PLEASE NOTICE THAT DUE TO TIMING, SOME FURTHER CHANGES WERE APPLIED ON THE ER: </b></small>
+		<b>PLEASE NOTICE THAT DUE TO TIMING, SOME FURTHER CHANGES WERE APPLIED ON THE ER, HENCE, THIS IS THE REFERENCE ONE: </b></small>
+        <img src="photo_2021-12-03_18-18-40" alt="ER Model" >
 
 		
 	
-	</form>
+	
 
 	
 </body>
