@@ -17,7 +17,7 @@
 		body {
 			background-color: #06a990;
 			font-family: Helvetica;
-			text-align: left;
+			text-align: center;
 		}
 
 		/* Styling the Form (Color, Padding, Shadow) */
@@ -105,23 +105,25 @@
 		standing as both <i>short-term memory</i> (i.e., working memory) and <i>long-term memory</i>, specifically episodic. While the former function filters the future events by location, duration, target age, personal interests, event category (e.g., music, shows, festivals),<br>
 		and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures. <br><br></small>
         </form>
-        <b>DATA RESOURCES CATALOGUE:</b><br> 
-		<ol>
-			<li>CRUSHSITE: <a href= https://www.crushsite.it/it>https://www.crushsite.it/it</a></li>
-			<li>STAYHAPPENING: <a href= https://stayhappening.com> https://stayhappening.com/</a></li>
-			<li>EVENTBRITE: <a href= https://www.eventbrite.com> https://www.eventbrite.com/</li></a>
-			<li>TRIPADVISOR: <a href=  https://www.tripadvisor.it> https://www.tripadvisor.it/</li></a>
-			<li>ESN: <a href=   https://esn.it> https://esn.it/</li></a>
-			<li>UNIVERSITARIO: <a href= https://www.luniversitario.it> https://www.luniversitario.it/ </li></a>
-			<li>DATI TRENTINO: <a href= https://dati.trentino.it> https://dati.trentino.it/</li></a>
-			<li>MEETUP: <a href= https://www.meetup.com/it-IT> https://www.meetup.com/it-IT/</li></a>
-			<li>OPENSTREETMAP: <a href= https://www.openstreetmap.org/#map=9/46.0025/10.9414> https://www.openstreetmap.org/#map=9/46.0025/10.9414</li></a>
-			<li>MYMOVIES: <a href= https://www.mymovies.it/cinema/trento/versione-originale> https://www.mymovies.it/cinema/trento/versione-originale/</li></a>
+        <form action='#' method = 'post' id="form"></form>
+            <b>DATA RESOURCES CATALOGUE:</b><br> 
+            <ol>
+                <li>CRUSHSITE: <a href= https://www.crushsite.it/it>https://www.crushsite.it/it</a></li>
+                <li>STAYHAPPENING: <a href= https://stayhappening.com> https://stayhappening.com/</a></li>
+                <li>EVENTBRITE: <a href= https://www.eventbrite.com> https://www.eventbrite.com/</li></a>
+                <li>TRIPADVISOR: <a href=  https://www.tripadvisor.it> https://www.tripadvisor.it/</li></a>
+                <li>ESN: <a href=   https://esn.it> https://esn.it/</li></a>
+                <li>UNIVERSITARIO: <a href= https://www.luniversitario.it> https://www.luniversitario.it/ </li></a>
+                <li>DATI TRENTINO: <a href= https://dati.trentino.it> https://dati.trentino.it/</li></a>
+                <li>MEETUP: <a href= https://www.meetup.com/it-IT> https://www.meetup.com/it-IT/</li></a>
+                <li>OPENSTREETMAP: <a href= https://www.openstreetmap.org/#map=9/46.0025/10.9414> https://www.openstreetmap.org/#map=9/46.0025/10.9414</li></a>
+                <li>MYMOVIES: <a href= https://www.mymovies.it/cinema/trento/versione-originale> https://www.mymovies.it/cinema/trento/versione-originale/</li></a>
 
-		</ol>
-		<b>LINK TO DATASETS: <a href= https://github.com/LuciaHrovatin/KDI_project/tree/main/Formatted_Datasets>repo link</a> </b><br> 
-		Data regarding events coming from crushsite, stayhappening, tripadvisor, dati trentino, meetup, mymovies and ESN have been saved in JSON format, and divided by E-type.
-		Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.
+            </ol>
+            <b>LINK TO DATASETS: <a href= https://github.com/LuciaHrovatin/KDI_project/tree/main/Formatted_Datasets>repo link</a> </b><br> 
+            Data regarding events coming from crushsite, stayhappening, tripadvisor, dati trentino, meetup, mymovies and ESN have been saved in JSON format, and divided by E-type.
+            Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.
+        </form>
 		<pre>
 			<code>
 		{
@@ -158,18 +160,20 @@
 						
 			</code>
 		</pre>
-		<b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
-		<ol>
-			<li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
-			<li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
-			<li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
-		</ol>
-		LINK TO ETG: https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl 
-		The building process of the ER was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br>
-		<ol>
+        <form action='#' method = 'post' id="form">
+            <b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
+            <ol>
+                <li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
+                <li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
+                <li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
+            </ol>
+            LINK TO ETG: https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl 
+            The building process of the ER was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br>
+            
+        </form>
 
-		
-		<li> Common objects were mainly considered to be existence-independent as they are
+		<ol>
+		<left><li> Common objects were mainly considered to be existence-independent as they are
 		uniquely identified by their attributes, and do not depend on other entity. Thanks to their
 		generic representation and vast usage, they could be used for a (future) broader DoI.</li>
 		<li> Core objects represent purpose-specific entities, such as the event type, main actors (e.g.,
@@ -250,7 +254,7 @@
 		<li>To satisfy the necessity of a memory, the ER model integrates an Archive entity too, aiming at keeping track of events' past history.</li>
 		<li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses
 			on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li>
-		</ol>
+		</ol></left>
         
 
 		<b>PLEASE NOTICE THAT DUE TO TIMING, SOME FURTHER CHANGES WERE APPLIED ON THE ER, HENCE, THIS IS THE REFERENCE ONE: </b></small>
