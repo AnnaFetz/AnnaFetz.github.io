@@ -101,7 +101,7 @@ The ER model has been structured following the future website's filters and its 
 	
 <p><li>Social Events: lead to a socialization process (i.e., people forming groups) and present repeated actions, such as drinking or dancing. A prototypical example is a Happy Hour. <br>
 <li> Education Events: (academic) prearranged meetings for consultation, exchange of information, or discussion. The audience might be not actively involved.<br>
-- Workshop: umbrella term for any laboratory event that actively involves the participants and delivers a tangible result (i.e., product), or breaks new skills.</li><br>
+<li> Workshop: umbrella term for any laboratory event that actively involves the participants and delivers a tangible result (i.e., product), or breaks new skills.</li><br>
 <li> Cultural Events: knowing that cultural has a broad meaning, within this project, an event
 		is defined as cultural if it is designed for entertainment and enjoyment and is related to
 		some branch of art, culture, or local values (i.e., performing arts, musicals, photography,
@@ -109,13 +109,11 @@ The ER model has been structured following the future website's filters and its 
 	structure as it is consistent with the project's purpose.</li>
 	<br>
 	
-<li>Tour: traveling means going from one place to another. Whereas the event's types above
-		may be represented as happening at a specific time and in a static space, a tour event
-		involves both a movement and some personal interests. For example, if a hiking tour is
-		considered, two decoupled levels can be identified. Firstly, the static one, meaning the
-		event description, follows the standard place-time definition. Then, the movement and its
-		volatility can be introduced. Thus, creating a specific entity in the ER model combines the
-	two levels and tries to solve a corner case.<br></li>
+<li>Tour: traveling means going from one place to another. Whereas the event's types above may be represented as happening at a specific time and in a static space, a tour event
+involves both a movement and some personal interests. For example, if a hiking tour is
+considered, two decoupled levels can be identified. Firstly, the static one, meaning the
+event description, follows the standard place-time definition. Then, the movement and its
+volatility can be introduced. Thus, creating a specific entity in the ER model combines the two levels and tries to solve a corner case.<br></li>
 	
 <li>Sports Events: organized occasions where a sports or exercise activity is performed at a specific location in a temporal interval. Most sports events are also part of bigger meetings and competitions. They can be periodically organised, such as the Facoltiadi or a sports course (i.e., dance course). Depending on the disciplines, schedule, competitors,	and scope (e.g., tournaments, leagues, fundraising), the events may embed different descriptors. However, accordingly to the project's purpose only the general ones have been chosen. Specifically, they resemble the SportsCompetition model developed by the W3C Community Group.</li><br>
 		
@@ -129,7 +127,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 		needs and possibilities. </li>
 </ol>
 <br> 
-<li> CreativeWork gathers all human artifacts produced during an activity or employed in an event. The properties for each sub-class have been extracted by benchmarking other services, for example:
+<li> CreativeWork gathers all human artifacts produced during an activity or employed in an event. The properties for each sub-class have been extracted by benchmarking other services, for example:</li>
 	<ol>
 	<li> Track follows the audio features returned by the SpotifyAPI. </li>
 		<br>
@@ -137,16 +135,17 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 	</ol>
 <li> Map should comply with some standards and minimum requirements depending on the type of product, as the Copernicus program states. In this framework, the maps are defined as a geographical depiction of the territory and routing instrument. </li>
     
-<li> Image entity preserves the standard characteristics of a (digital) picture but also mimics Pinterest's functionality via (optional) tags, allowing an easy retrieval.<br>
+<li> Image entity preserves the standard characteristics of a (digital) picture but also mimics Pinterest's functionality via (optional) tags, allowing an easy retrieval.</li><br>
 <li> PerformingGroup is an umbrella term for describing single artists, groups, bands, or orchestras but also theater or artistic groups.</li> <br>
 <li> Team sub-entity is based on the tabularstructure of TheSportsDB by leaving out the attributes referring to streaming data (e.g., live scores).</li><br>
 <li> To satisfy the necessity of a memory, the ER model integrates an Archive entity too, aiming at keeping track of events' past history.</li><br>
 <li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li><br>
 
-For more details, please notice that due to timing some further changes were applied, and the reference one is the following: [reference ER](https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/ER.jpg).
+Please notice that due to timing some further changes were applied, reference ER is the following: [reference ER](https://github.com/AnnaFetz/AnnaFetz.github.io/blob/main/ER.jpg).
+
 <br>
 
-### ETG description
+## ETG description
 
 <li> <b>Event:</b> The CQs requiring to navigate back in time through an event's collective memory (i.e., Archive) and those demanding the distance to a certain venue were not satisfied by the previous version of the ER model. While the latter has been solved via a boolean Data property distance that filters the events based on a ray of 2km from a specific venue, the former issue induced more structural changes. Hence the adjustments focused on the consistency of information and the storage costs of sub events belonging to a super event,  such as a Festival or a Fair. To simplify the model, the Object property superEvent has been introduced, allowing a one to one relationship with the main Event and guaranteeing a single storage in Archive. Moreover, to follow the trail of a collective memory, and to ease future project's expansions, the Object property post was introduced, linking to CreativeWork, and modeling the act of posting pictures and reviews. Within this framework, also the Object property EventType and the relative sub categories have undergone several modifications. Ideally, the ER event classification model should have been mirrored by the final ETG, as it perfectly satisfied the granularity required by the CQs. However, due to the fact that the majority of our reference files required pondered parsing, and several Event's leaf nodes contained boolean properties, a less detailed but more performing option has been preferred. Thus, the ETG reflects the final ER model, that merges the contextual and core event-related Etypes and keeps the six main subcategories of Event. Hence, the Event child SocialEvent displays all the Data properties contained in DanceEvent (e.g., happyHour) and in FolkEvent. Lastly, instead of keeping one Entity per event mode (namely, offline, online, and blended),
                 a new attribute eventMode was introduced. The values allowed should identify (as string)
@@ -192,7 +191,7 @@ For more details, please notice that due to timing some further changes were app
             When selecting the appropriate concepts to reshape the ER model, some general purpose ontologies such as schema.org and DBPedia have been exploited, along with Wordnet database. Moreover, the concepts related to the spatial information have been treated according to OpenStreetMap's ontologies OSMonto and LikedGeoData. A last open issue regards the definition of architectural barriers, which depends on the country and its relative legislation. Having as spatial coverage the area of Trento and Rovereto, the project reports the guidelines proposed by the cooperative HandiCREA in the mobile application TrentinoAccessibile. <br>
   
 
-### Final Links 
+## Final Links 
 <br>
 [FINAL ETG](https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Teleologies/Formal%20Modeling/ETG.owl) and [FINAL KG](https://github.com/AnnaFetz/KDI_TRENTINO/blob/main/Datasets/Data%20Integration/EG_RDF.zip)<br>
 
