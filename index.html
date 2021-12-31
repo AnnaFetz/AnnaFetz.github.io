@@ -1,1 +1,268 @@
-"" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Which gym membership do you prefer? 
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #06a990;
+			font-family: Helvetica;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 800px;
+			margin: 80px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.763);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid rgb(2, 1, 1);
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline;
+			width: auto;
+			content:"\f058";
+			font: inherit;
+			color: currentColor;
+			width: 1.15em;
+			height: 1.15em;
+			border: 0.15em solid currentColor;
+			border-radius: 50%;
+		}
+		
+
+		/* Styling Button */
+		button {
+			background-color: #06a990;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 25px;
+			display: block;
+			width: 100%;
+			margin-top: 60px;
+			margin-bottom: 30px;
+			
+		}
+		.box {
+			border: 1px solid rgb(2, 1, 1);
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+
+		}
+
+	</style>
+</head>
+<body>
+	<h1><center><b>Knowledge and Data Integration course 2021/2022</b></center</h1>
+	<p><br> This is the official website of the project <i>Events in Trentino </i> 2021/2022 (<a href=https://github.com/AnnaFetz/KDI_TRENTINO> repo link</a>) by Anna Fetz and Lucia Hrovatin (Data Science, University of Trento). 
+	</p>
+	<form action='#' method = 'post' id="form">
+		The project's scope, intersects the Event domain with the University Student Life within Trentino's area. Due to the placement of University of Trento's deartments, the spatial coverage includes only the municipalities of Trento and Rovereto. <br>
+		Temporally, the project targets 2019-2022 timespan, which aims at detecting and modeling the changes occurred due to the Covid-19 pandemic in event organization and participation.<br>
+		The final deliverable should correspond to a website acting as a collective memory of a specific administrative area. The target users are university students, who interact with the service,<br>
+		standing as both <i>short-term memory</i> (i.e., working memory) and <i>long-term memory</i>, specifically episodic. While the former function filters the future events by location, duration, target age, personal interests, event category (e.g., music, shows, festivals),<br>
+		and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures. <br><br>
+		<b>DATA RESOURCES CATALOGUE:</b><br> 
+		<ol>
+			<il>CRUSHSITE: https://www.crushsite.it/it/</il>
+			<il>STAYHAPPENING: https://stayhappening.com/ </il>
+			<il>EVENTBRITE: https://www.eventbrite.com/</il>
+			<il>TRIPADVISOR: https://www.tripadvisor.it/</il>
+			<il>ESN: https://esn.it/</il>
+			<il>UNIVERSITARIO: https://www.luniversitario.it/ </il>
+			<il>DATI TRENTINO: https://dati.trentino.it/</il>
+			<il>MEETUP: https://www.meetup.com/it-IT/</il>
+			<il>OPENSTREETMAP: https://www.openstreetmap.org/#map=9/46.0025/10.9414</il>
+			<il>MYMOVIES: https://www.mymovies.it/cinema/trento/versione-originale/</il>
+
+		</ol>
+		<b>LINK TO DATASETS: https://github.com/LuciaHrovatin/KDI_project/tree/main/Formatted_Datasets </b><br> 
+		Data regarding events coming from crushsite, stayhappening, tripadvisor, dati trentino, meetup, mymovies and ESN have been saved in JSON format, and divided by E-type.
+		Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.
+		<pre>
+			<code>
+
+		{
+			"has_eventID": "",
+			"has_title": "",
+			"has_mode": "", #online, offline or blended
+			"has_link": "",
+			"has_targetAge": "",
+			"has_edition": "",
+			"has_festivalStatus": , #bool
+			"has_language": ["it-IT"],
+			"has_start": "", #datetime
+			"has_end": "", #datetime
+			"has_recurrency": , #bool
+			"has_organizer": "",
+			"has_specialAnnouncements": "",
+			"has_description": "",
+			"has_terminated": , #bool
+			"has_hashtag": [],
+			"has_distance": , #bool
+			"has_schedule": "", #daily, monthly, weekly
+			"has_transportMode": [],
+			"has_venue": , #osm_id
+			"has_virtualLocation": "", #object property
+			"has_superEvent": "", #object property
+			"has_originalLanguage": , #bool
+			"has_performer": "",
+			"has_subtitles": , #bool
+			"has_guidedTour": , #bool
+			"has_ticket": "", #object property
+			"has_Archive": "",
+			"has_freeEntrance": , #bool
+		}
+						
+			</code>
+		</pre>
+		<b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
+		<ol>
+			<il>WORDNET:https://wordnet.princeton.edu/</il>
+			<il>SCHEMA: https://schema.org/ </il>
+			<il>DBPEDIA: https://www.dbpedia.org/</il>
+		</ol>
+		LINK TO ETG: https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl 
+		The building process of the Informal Modeling Sheet was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br>
+		<ol>
+
+		
+		<il> Common objects were mainly considered to be existence-independent as they are
+		uniquely identified by their attributes, and do not depend on other entity. Thanks to their
+		generic representation and vast usage, they could be used for a (future) broader DoI.</il>
+		<il> Core objects represent purpose-specific entities, such as the event type, main actors (e.g.,
+		Student) or specific facilities. According to the intended output, core objects mirror the
+		infrastructure of the filtering system of the website. Specifically, these entities should direct
+		the initial query and skim all the events not matching preferences. For instance, if a specific
+		place is selected, the output will list only events taking place there.</il>
+		<il> Contextual objects were thought of being a further specification provided by the user to
+		obtain a narrower list of events matching all criteria. For instance, the user would use
+		location-specific keywords when searching for a specific set of events (e.g., Concerts in
+		Trento's Doss).</il>
+		<il>With concerns to actions, they mostly were intentionally not defined as entities. They have been integrated as either properties or bidirectional relationships between main
+		entities (i.e., superclasses). This choice is justified by focusing more on the event types and,
+		consequently, rejecting of a dense ER model. On the one hand, this leads to a model that
+		fully matches the project's purpose. On the other hand, it implies a more complex matching between the ER model and an already­existing Ontology. Functions, representing a
+		role or a static nature of an Etype, were mostly integrated as properties. However, in modeling certain events, this representation does not hold and the creation of sub­entities is preferred.</il>
+		<br>
+		The designed Entit-Relationship (ER) model, shown below 1, exploits the Crow's foot notation
+		by displaying entities as boxes and relationships as lines between them [6]. The relationship's
+		cardinality is defined by the shape at the end of the lines: a ring for zero, a dash for one and
+		crow's foot for many.
+		Moreover, the model structures the entities following a bottom-up approach, called generalization. If a set of entities has some common properties, they are extracted and generalized to a
+		higher-level entity (i.e., Student and Employee are generalized to Person). A sub-class inherits
+		all the attributes and relationships from the superclass(es) and, additionally, defines its specific
+		attributes. A non filled arrow is placed with the head touching the superclass object, while all
+		sub-classes are linked to this arrow by a black line.
+		<br>
+		The ER model has been structured following the future website's filters and its focus on searching for events, as other websites already do (Figure 2 and 3). The main event's type (i.e.,
+		categories) identified are the following:
+	
+		<li>Social Events: lead to a socialization process (i.e., people forming groups) and present
+		repeated actions, such as drinking or dancing. A prototypical example is a Happy Hour.</li>
+		<li>Education Events: (academic) prearranged meetings for consultation, exchange of information, or discussion. The audience might be not actively involved.</li>
+		<li>Workshop: umbrella term for any laboratory event that actively involves the participants
+		and delivers a tangible result (i.e., product), or breaks new skills.</li>
+		<li>Cultural Events: knowing that cultural has a broad meaning, within this project, an event
+		is defined as cultural if it is designed for entertainment and enjoyment and is related to
+		some branch of art, culture, or local values (i.e., performing arts, musicals, photography,
+		and literature). The definition here adopted partially resembles the DutchCulture Database
+		structure as it is consistent with the project's purpose.</li>
+		<li>Tour: traveling means going from one place to another. Whereas the event's types above
+		may be represented as happening at a specific time and in a static space, a tour event
+		involves both a movement and some personal interests. For example, if a hiking tour is
+		considered, two decoupled levels can be identified. Firstly, the static one, meaning the
+		event description, follows the standard place-time definition. Then, the movement and its
+		volatility can be introduced. Thus, creating a specific entity in the ER model combines the
+		two levels and tries to solve a corner case.<li>
+		<li>Sports Events: organized occasions where a sports or exercise activity is performed at
+		a specific location in a temporal interval. Most sports events are also part of bigger meetings and competitions. They can be periodically organised, such as the Facoltiadi or a sports course (i.e., dance course). Depending on the disciplines, schedule, competitors,
+		and scope (e.g., tournaments, leagues, fundraising), the events may embed different descriptors. However, accordingly to the project's purpose only the general ones have been
+		chosen. Specifically, they resemble the SportsCompetition model developed by the W3C Community Group.
+		
+		While the Covid-19 pandemic did not particularly impact the events' categories, it constraints
+		and modifies the concept of location. Thus, three scenarios are possible:
+		<li>Offline events have a location traditionally defined as an identifiable point in the two (or
+		three) dimensional space </li>
+		<li>Online events, meaning occasions happening only in a virtual environment hosted on video
+		communication services, such as Zoom and Google Meet.</li>
+		<li>Blended or Hybrid events offer an offline or online attendance depending on the participant's
+		needs and possibilities.</li> 
+		</ol><br>
+		CreativeWork gathers all human artifacts produced during an activity or employed in an event. The properties for each sub-class have been extracted by benchmarking other services, for example:
+		<li>Track follows the audio features returned by the SpotifyAPI.</li>
+		<li>Recipe is mainly modeled on Giallo Zafferano, a well known Italian food website and magazine that greatly satisfies user's needs but does not offer tabular data. Further attributes
+		were extracted from the RecipeDB food database, which encapsulates the information
+		about recipes, ingredients and nutrition profiles interlinked with flavor profiles and health
+		associations. <li>
+		<li>Map should comply with some standards and minimum requirements depending on the type
+		of product, as the Copernicus program states. In this framework, the maps are defined as
+		a geographical depiction of the territory and routing instrument. <li>
+		
+
+		<li>Image entity preserves the standard characteristics of a (digital) picture but also mimics Pinterest's functionality via (optional) tags, allowing an easy retrieval.</li> <br>
+		Some further specifications are needed: 
+		<ol><li>PerformingGroup is an umbrella term for describing single artists, groups, bands, or orchestras but also theater or artistic groups. </li>
+		<li>Secondly, the Team sub­entity is based on the tabularstructure of TheSportsDB by leaving out the attributes referring to streaming data (e.g., live scores).
+		</li>
+		<li>To satisfy the necessity of a memory, the ER model integrates an Archive entity too, aiming at keeping track of events' past history.</li>
+		<li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses
+			on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li>
+		</ol>
+
+
+		<b>PLEASE NOTICE THAT DUE TO TIMING, SOME FURTHER CHANGES WERE APPLIED ON THE ER: </b>
+
+		
+	
+	</form>
+
+	
+</body>
+
+</html>
+
+
