@@ -110,8 +110,16 @@
 		standing as both <i>short-term memory</i> (i.e., working memory) and <i>long-term memory</i>, specifically episodic. While the former function filters the future events by location, duration, target age, personal interests, event category (e.g., music, shows, festivals),<br>
 		and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures. <br><br></small>
     </form>
-    <form action='#' method = 'post' id="form"></form>
-    <td><b>DATA RESOURCES CATALOGUE:</b><br> 
+    
+    <form action='#' method = 'post' id="form">
+        <b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
+        <ol>
+            <li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
+            <li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
+            <li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
+        </ol><br>
+        LINK TO ETG: <a href="https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl">ETG</a><br> 
+        <b>DATA RESOURCES CATALOGUE:</b><br> 
         <ol>
             <li>CRUSHSITE: <a href= https://www.crushsite.it/it>https://www.crushsite.it/it</a></li>
             <li>STAYHAPPENING: <a href= https://stayhappening.com> https://stayhappening.com/</a></li>
@@ -123,57 +131,49 @@
             <li>MEETUP: <a href= https://www.meetup.com/it-IT> https://www.meetup.com/it-IT/</li></a>
             <li>OPENSTREETMAP: <a href= https://www.openstreetmap.org/#map=9/46.0025/10.9414> https://www.openstreetmap.org/#map=9/46.0025/10.9414</li></a>
             <li>MYMOVIES: <a href= https://www.mymovies.it/cinema/trento/versione-originale> https://www.mymovies.it/cinema/trento/versione-originale/</li></a>
-        </ol>
+        </ol><br>
         <b>LINK TO DATASETS: <a href= https://github.com/LuciaHrovatin/KDI_project/tree/main/Formatted_Datasets>repo link</a> </b><br> 
         Data regarding events coming from crushsite, stayhappening, tripadvisor, dati trentino, meetup, mymovies and ESN have been saved in JSON format, and divided by E-type.
-        Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.</td>
-        <td><b>KNOWLEDGE RESOURCES CATALOGUE:</b><br> 
-        <ol>
-            <li>WORDNET:<a href= "https://wordnet.princeton.edu/"> https://wordnet.princeton.edu/</a></li>
-            <li>SCHEMA: <a href="https://schema.org/"> https://schema.org/</a> </li>
-            <li>DBPEDIA: <a href="https://www.dbpedia.org/"> https://www.dbpedia.org/ </a></li>
-        </ol>
-        LINK TO ETG: <a href="https://github.com/LuciaHrovatin/KDI_project/blob/main/metadata/ETG_Model.ttl">ETG</a>
-        The building process of the ER was intended to resemble a real query on the final service. Thus, this hierarchy has been followed: <br></td>
-        </form>
-	<pre>
-		<code>
-		{
-			"has_eventID": "",
-			"has_title": "",
-			"has_mode": "", #online, offline or blended
-			"has_link": "",
-			"has_targetAge": "",
-			"has_edition": "",
-			"has_festivalStatus": , #bool
-			"has_language": ["it-IT"],
-			"has_start": "", #datetime
-			"has_end": "", #datetime
-			"has_recurrency": , #bool
-			"has_organizer": "",
-			"has_specialAnnouncements": "",
-			"has_description": "",
-			"has_terminated": , #bool
-			"has_hashtag": [],
-			"has_distance": , #bool
-			"has_schedule": "", #daily, monthly, weekly
-			"has_transportMode": [],
-			"has_venue": , #osm_id
-			"has_virtualLocation": "", #object property
-			"has_superEvent": "", #object property
-			"has_originalLanguage": , #bool
-			"has_performer": "",
-			"has_subtitles": , #bool
-			"has_guidedTour": , #bool
-			"has_ticket": "", #object property
-			"has_Archive": "",
-			"has_freeEntrance": , #bool
-		}
-						
-		</code>
-	</pre>
+        Their keys are data and object properties contained in the respective EG Model.<br>Namely, they are shaped according to the E-type they belong to, as Cultural Events example below.
 
-	<ol>
+        The building process of the ER was intended to resemble a real query on the final service. Thus, below an explanation of the intended hierarchy. <br>
+        </form>
+        <pre>
+            <code>
+            {
+                "has_eventID": "",
+                "has_title": "",
+                "has_mode": "", #online, offline or blended
+                "has_link": "",
+                "has_targetAge": "",
+                "has_edition": "",
+                "has_festivalStatus": , #bool
+                "has_language": ["it-IT"],
+                "has_start": "", #datetime
+                "has_end": "", #datetime
+                "has_recurrency": , #bool
+                "has_organizer": "",
+                "has_specialAnnouncements": "",
+                "has_description": "",
+                "has_terminated": , #bool
+                "has_hashtag": [],
+                "has_distance": , #bool
+                "has_schedule": "", #daily, monthly, weekly
+                "has_transportMode": [],
+                "has_venue": , #osm_id
+                "has_virtualLocation": "", #object property
+                "has_superEvent": "", #object property
+                "has_originalLanguage": , #bool
+                "has_performer": "",
+                "has_subtitles": , #bool
+                "has_guidedTour": , #bool
+                "has_ticket": "", #object property
+                "has_Archive": "",
+                "has_freeEntrance": , #bool
+            }
+                            
+            </code>
+		<ol>
 		<p><li> Common objects were mainly considered to be existence-independent as they are
 		uniquely identified by their attributes, and do not depend on other entity. Thanks to their
 		generic representation and vast usage, they could be used for a (future) broader DoI.</li><br>
