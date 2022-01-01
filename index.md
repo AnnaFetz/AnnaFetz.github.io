@@ -1,4 +1,5 @@
-## Official Events in Trentino KDI Project's Website
+## Events in Trentino 
+### KDI Project's Website
 ### Academic year 2021/2022, MSc Data Science, University of Trento
 
 Link to [Official course repo](https://github.com/AnnaFetz/KDI_Events_in_Trentino)<br>
@@ -91,7 +92,7 @@ The ER model has been structured following the future website's filters and its 
 	
 <li>Tour: traveling means going from one place to another. Whereas the event's types above may be represented as happening at a specific time and in a static space, a tour event
 involves both a movement and some personal interests. For example, if a hiking tour is considered, two decoupled levels can be identified. Firstly, the static one, meaning the
-event description, follows the standard place-time definition. Then, the movement and its volatility can be introduced. Thus, creating a specific entity in the ER model combines the two levels and tries to solve a corner case.<br></li>
+event description, follows the standard place-time definition. Then, the movement and its volatility can be introduced. Thus, creating a specific entity in the ER model combines the two levels and tries to solve a corner case.</li><br>
 	
 <li>Sports Events: organized occasions where a sports or exercise activity is performed at a specific location in a temporal interval. Most sports events are also part of bigger meetings and competitions. They can be periodically organised, such as the Facoltiadi or a sports course (i.e., dance course). Depending on the disciplines, schedule, competitors,	and scope (e.g., tournaments, leagues, fundraising), the events may embed different descriptors. However, accordingly to the project's purpose only the general ones have been chosen. Specifically, they resemble the SportsCompetition model developed by the W3C Community Group.</li><br>
 		
@@ -102,7 +103,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 	<li> Online events, meaning occasions happening only in a virtual environment hosted on video
 		communication services, such as Zoom and Google Meet; </li><br>
 	<li> Blended or Hybrid events offer an offline or online attendance depending on the participant's
-		needs and possibilities. </li>
+		needs and possibilities. </li><br>
 </ol><br> 
 <li> CreativeWork gathers all human artifacts produced during an activity or employed in an event. The properties for each sub-class have been extracted by benchmarking other services, for example:</li>
 	<ol>
@@ -118,6 +119,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 <li> A final remark regards the creation of the ArchitecturalBarriers entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li><br>
 
 Please notice that due to timing some further changes were applied. Reference ER can be found in the official course repo.<br>
+</ol><br> 
 
 ### ETG description
 
